@@ -81,13 +81,13 @@ Before you begin, ensure you have the following installed:
 ##  Installation
 
 ### Step 1: Clone the Repository
-\\\bash
+\\\ash
 git clone https://github.com/YOUR_USERNAME/SupportFlow.git
 cd SupportFlow
 \\\
 
 ### Step 2: Create a Virtual Environment (Recommended)
-\\\bash
+\\\ash
 # On Windows
 python -m venv venv
 venv\Scripts\activate
@@ -98,19 +98,19 @@ source venv/bin/activate
 \\\
 
 ### Step 3: Install Dependencies
-\\\bash
+\\\ash
 pip install -r requirements.txt
 \\\
 
 ### Step 4: Generate Sample Data (First Time Only)
 If you're setting up for the first time and don't have training data:
-\\\bash
+\\\ash
 python generate_data.py
 \\\
 This creates \support_tickets_data.csv\ with 1000 synthetic support tickets for training.
 
 ### Step 5: Train the Models
-\\\bash
+\\\ash
 python train_models.py
 \\\
 This trains two ML models:
@@ -120,13 +120,13 @@ This trains two ML models:
 The trained models are saved in the \models/\ directory.
 
 ### Step 6: Run the Application
-\\\bash
+\\\ash
 streamlit run app.py
 \\\
 The application will open in your default browser at \http://localhost:8501\
 
 **Quick Start Batch File (Windows):**
-\\\bash
+\\\ash
 run_app.bat
 \\\
 
@@ -178,23 +178,17 @@ SupportFlow/
 
 \\\
 Input Ticket
-      |
-      v
+    
 Text Preprocessing (Cleaning, Lowercasing, etc.)
-      |
-      v   
+    
 TF-IDF Vectorization (Convert text to numerical features)
-      |
-      v   
+    
 Category Model (Logistic Regression)
-      |
-      v   
+    
 Urgency Model (Gradient Boosting)
-      |
-      v    
+    
 Routing Decision
-      |
-      v
+    
 Output: Category, Urgency, Assigned Team
 \\\
 
@@ -230,7 +224,7 @@ Output: Category, Urgency, Assigned Team
 1. Modify \generate_data.py\ to include new categories
 2. Regenerate data with \python generate_data.py\
 3. Retrain models with \python train_models.py\
-4. Update routing logic in \app.py\
+4. Update routing logic in \pp.py\
 
 ### Adjust Model Parameters
 Edit the hyperparameters in \	rain_models.py\:
@@ -277,5 +271,26 @@ Contributions are welcome! Here's how you can help:
 ### High memory usage
 **Solution**: Reduce \max_features\ in TF-IDF vectorizer in \	rain_models.py\
 
+##  Support
 
+For issues, questions, or suggestions:
+- Open an issue on GitHub
+- Contact the development team
+- Check documentation in the README
 
+##  Learning Resources
+
+- [Scikit-learn Documentation](https://scikit-learn.org/)
+- [Streamlit Documentation](https://docs.streamlit.io/)
+- [NLP Basics with Python](https://www.nltk.org/)
+- [Machine Learning Fundamentals](https://developers.google.com/machine-learning/crash-course)
+
+##  License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+**Made with  for efficient customer support management**
+
+Last Updated: January 30, 2026
